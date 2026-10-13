@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #1d3a2c;
+  --color-forest-deep: #12261c;
+  --color-ivory: #f7f3ea;
+  --color-sand: #ebe4d3;
+  --color-brass: #a8854a;
+  --color-ink: #1b1d1a;
+  --color-muted: #5f6259;
+  --font-serif: var(--font-noto-serif), "Noto Serif KR", serif;
+  --font-sans: var(--font-noto-sans), "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  word-break: keep-all;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .eyebrow {
+    @apply text-xs font-medium tracking-[0.25em] text-brass uppercase;
+  }
+  .h-display {
+    @apply font-serif text-3xl leading-snug font-semibold text-forest sm:text-4xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium tracking-wide transition-colors;
+  }
+  .btn-primary {
+    @apply bg-forest text-ivory hover:bg-forest-deep;
+  }
+  .btn-brass {
+    @apply bg-brass text-white hover:brightness-95;
+  }
+  .btn-ghost {
+    @apply border border-white/70 text-white hover:bg-white/10;
+  }
+  .tbl {
+    @apply w-full border-collapse text-sm;
+  }
+  .tbl thead th {
+    @apply bg-forest px-3 py-3 text-left font-medium whitespace-nowrap text-ivory sm:px-4;
+  }
+  .tbl td,
+  .tbl tbody th {
+    @apply border-b border-forest/15 px-3 py-3 text-left align-top sm:px-4;
+  }
+  .tbl tbody th {
+    @apply bg-sand font-medium text-forest;
+  }
+}
