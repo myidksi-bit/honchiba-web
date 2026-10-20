@@ -86,7 +86,7 @@ export default function CoursePage() {
           <h2 className="h-display">56년이 넘는 전통, 세 가지 코스</h2>
           <p className="mt-5 leading-relaxed text-muted">
             사계절의 자연미와 경치로 둘러싸인 혼치바 컨트리클럽은 1970년 홋치
-            아키라(発知 朗, Akira Hocchi)의 설계로 개장했습니다. 전략적으로
+            아키라(Akira Hocchi)의 설계로 개장했습니다. 전략적으로
             배치된 연못과 벙커가 조화를 이루어 플레이어의 지성과 감성을
             자극합니다. 코스는 EAST, CENTRAL, WEST로 구분됩니다.
           </p>
@@ -195,9 +195,9 @@ export default function CoursePage() {
           />
         </div>
         <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted">
-          <li>東コース = 동코스(EAST)</li>
-          <li>中コース = 중코스(CENTRAL)</li>
-          <li>西コース = 서코스(WEST)</li>
+          <li>EAST = 동코스</li>
+          <li>CENTRAL = 중코스</li>
+          <li>WEST = 서코스</li>
         </ul>
       </section>
 
