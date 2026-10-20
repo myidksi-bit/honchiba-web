@@ -17,11 +17,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-forest/10 bg-ivory/95 backdrop-blur">
       <div className="container-x flex h-16 items-center justify-between">
         <Link href="/" className="leading-none">
-          <span className="block font-serif text-lg font-semibold tracking-[0.18em] text-forest">
-            HONCHIBA
+          <span className="block font-serif text-lg font-semibold tracking-[0.06em] text-forest">
+            혼치바 글로벌10
           </span>
           <span className="mt-1 block text-[10px] tracking-[0.3em] text-brass">
-            COUNTRY CLUB
+            HONCHIBA GLOBAL 10
           </span>
         </Link>
 

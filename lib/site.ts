@@ -3,6 +3,7 @@ export const nav = [
   { href: "/facilities", label: "시설소개" },
   { href: "/cottage", label: "코티지" },
   { href: "/membership", label: "회원권" },
+  { href: "/family-cc", label: "패밀리CC" },
   { href: "/nearby", label: "주변 가볼만한 곳" },
   { href: "/reservation", label: "예약" },
   { href: "/news", label: "소식지" },

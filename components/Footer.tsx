@@ -6,11 +6,11 @@ export default function Footer() {
     <footer className="bg-forest-deep text-ivory/80">
       <div className="container-x grid gap-10 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="font-serif text-xl tracking-[0.18em] text-ivory">
-            HONCHIBA
+          <p className="font-serif text-xl tracking-[0.06em] text-ivory">
+            혼치바 글로벌10
           </p>
           <p className="mt-1 text-[10px] tracking-[0.3em] text-brass">
-            COUNTRY CLUB
+            HONCHIBA GLOBAL 10
           </p>
           <p className="mt-5 text-sm leading-relaxed">
             1970년 개장, 27홀.

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import FamilyClubDetail from "@/components/FamilyClubDetail";
 import PageHero from "@/components/PageHero";
+import { familyClubs, familyDiscount } from "@/lib/familyClubs";
 import { contact } from "@/lib/site";
 import heroImage from "@/public/images/scenery-5.jpg";
 
 export const metadata: Metadata = {
-  title: "회원권",
+  title: "글로벌10 회원권",
   description:
-    "혼치바 컨트리클럽 10년 소멸형 회원권. 골드 1,200만원, 블랙 800만원. 회원 혜택과 요금, 가입 절차 안내.",
+    "혼치바 글로벌10 회원권. 혼치바 컨트리클럽 10년 소멸형 회원권(골드 1,200만원, 블랙 800만원)에 라스베이거스·팜밸리 컨트리클럽 그린피 50% 할인 포함. 회원 혜택과 요금, 가입 절차 안내.",
 };
 
 const types = [
@@ -50,6 +52,7 @@ const notices = [
 
 const anchors = [
   { href: "#types", label: "회원권 유형" },
+  { href: "#family", label: "패밀리CC 혜택" },
   { href: "#perks", label: "회원전용특전" },
   { href: "#fees", label: "요금" },
   { href: "#steps", label: "가입절차" },
@@ -61,8 +64,8 @@ export default function MembershipPage() {
     <>
       <PageHero
         image={heroImage}
-        eyebrow="Membership"
-        title="회원권"
+        eyebrow="Global Membership 10"
+        title="글로벌10 회원권"
         lead="10년 동안 혼치바를 내 골프장처럼. 예약 횟수 제한 없이 이용하는 10년 소멸형 회원권입니다."
       />
 
@@ -97,6 +100,40 @@ export default function MembershipPage() {
         <p className="mt-4 text-sm text-muted">
           * 판매가격 내 입회비 포함, 명의개서료 110만원 별도
         </p>
+
+        <div id="family" className="mt-10 scroll-mt-32">
+          <div className="bg-forest px-6 py-6 text-ivory sm:px-8">
+            <p className="eyebrow text-[#e3c891]">Family Country Clubs</p>
+            <p className="mt-2 font-serif text-xl font-semibold text-white sm:text-2xl">
+              {familyDiscount.title}
+            </p>
+            <p className="mt-2 text-sm text-ivory/85">{familyDiscount.clubs}</p>
+            <p className="mt-1 text-xs text-[#e3c891]">* {familyDiscount.basis}</p>
+          </div>
+
+          <div className="mt-3 space-y-3">
+            {familyClubs.map((c) => (
+              <details key={c.id} className="group border border-forest/15 bg-white">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 [&::-webkit-details-marker]:hidden">
+                  <span>
+                    <span className="block text-[11px] tracking-[0.2em] text-brass">{c.en}</span>
+                    <span className="mt-1 block font-serif text-lg font-semibold text-forest">
+                      {c.ko}
+                      <span className="ml-2 text-sm font-normal text-muted">{c.location}</span>
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-sm text-forest">
+                    <span className="group-open:hidden">상세 보기 +</span>
+                    <span className="hidden group-open:inline">닫기 −</span>
+                  </span>
+                </summary>
+                <div className="border-t border-forest/10 bg-ivory px-5 py-8 sm:px-8">
+                  <FamilyClubDetail club={c} />
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
 
         <h3 className="mt-14 font-serif text-2xl font-semibold text-forest">기본혜택</h3>
         <ul className="mt-5 grid gap-3 md:grid-cols-2">

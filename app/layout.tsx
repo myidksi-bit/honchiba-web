@@ -18,11 +18,11 @@ const serif = Noto_Serif_KR({
 
 export const metadata: Metadata = {
   title: {
-    default: "혼치바 컨트리클럽 | 일본 치바 27홀 골프 & 코티지",
-    template: "%s | 혼치바 컨트리클럽",
+    default: "혼치바 글로벌10 | 혼치바CC · 라스베이거스CC · 팜밸리CC 회원권",
+    template: "%s | 혼치바 글로벌10",
   },
   description:
-    "1970년 개장, 나리타·하네다 공항에서 차량 약 50분. 27홀 코스와 삼나무 코티지 7동을 갖춘 혼치바 컨트리클럽 한글 안내.",
+    "일본 치바 혼치바 컨트리클럽 10년 회원권에 라스베이거스 컨트리클럽·팜밸리 컨트리클럽 그린피 50% 할인을 더한 혼치바 글로벌10 회원권 안내.",
 };
 
 export default function RootLayout({
