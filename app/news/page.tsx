@@ -4,7 +4,7 @@ import heroImage from "@/public/images/entrance.jpg";
 
 export const metadata: Metadata = {
   title: "소식지",
-  description: "회원 의견을 반영한 개선 내용과 혼치바 컨트리클럽의 현장 소식.",
+  description: "혼치바 컨트리클럽의 공지사항과 회원 의견을 반영한 개선 소식.",
 };
 
 const categories = [
@@ -18,9 +18,6 @@ const categories = [
     sub: null,
     text: "잔디 파종, 카트 팔걸이, 거울 추가 등 개선 내용을 사진과 함께 전합니다.",
   },
-  { name: "현장소식", sub: null, text: "김장나눔행사 등 클럽의 행사와 현장 이야기." },
-  { name: "직원소개", sub: null, text: "신입사원을 비롯한 혼치바의 직원들을 소개합니다." },
-  { name: "지역소개", sub: null, text: "주변 온천과 식당 등 지역 정보를 소개합니다." },
 ];
 
 export default function NewsPage() {
@@ -34,7 +31,14 @@ export default function NewsPage() {
       />
 
       <section className="container-x py-16 sm:py-20">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="border-l-2 border-brass bg-sand px-6 py-5">
+          <h2 className="font-serif text-lg font-semibold text-forest">공지사항</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            컨트리클럽의 최신 소식과 정보를 실시간으로 게시합니다.
+          </p>
+        </div>
+
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {categories.map((c) => (
             <div key={c.name} className="border border-forest/15 bg-white p-6">
               <h2 className="font-serif text-lg font-semibold text-forest">{c.name}</h2>

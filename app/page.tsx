@@ -142,7 +142,7 @@ export default function Home() {
             <p className="eyebrow">Membership</p>
             <h2 className="h-display mt-3">10년을 함께하는 회원권</h2>
             <p className="mt-5 leading-relaxed text-muted">
-              회원 우선 예약, 골프와 숙박 40% 상당 할인, 2인 라운드까지. 예약
+              골프와 숙박 20% 상당 할인, 2인 라운드까지. 예약
               횟수 제한 없이 성수기에도 최대 3박 연박이 가능합니다.
             </p>
             <Link href="/membership" className="btn btn-primary mt-8">

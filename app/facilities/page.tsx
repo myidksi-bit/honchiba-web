@@ -13,7 +13,6 @@ import locker from "@/public/images/locker.jpg";
 import proshop from "@/public/images/proshop.jpg";
 import restaurant from "@/public/images/restaurant.jpg";
 import restaurant1 from "@/public/images/restaurant-1.jpg";
-import restaurant2 from "@/public/images/restaurant-2.jpg";
 import heroImage from "@/public/images/scenery-7.jpg";
 
 export const metadata: Metadata = {
@@ -87,11 +86,10 @@ export default function FacilitiesPage() {
             라운드를 마친 뒤 여유롭게 머물러 보세요.
           </p>
           <Gallery
-            cols={2}
+            cols={3}
             photos={[
               { src: restaurant, alt: "목조 트러스 천장의 레스토랑 홀", caption: "레스토랑" },
               { src: restaurant1, alt: "통창으로 코스가 보이는 레스토랑", caption: "코스가 보이는 창가 좌석" },
-              { src: restaurant2, alt: "저녁 햇살이 드는 레스토랑", caption: "레스토랑 전경" },
               { src: compeRoom, alt: "단체 모임용 별실", caption: "별실 (컴페룸)" },
             ]}
           />
@@ -109,7 +107,6 @@ export default function FacilitiesPage() {
             <div>
               <h3 className="font-serif text-xl font-semibold text-forest">식사</h3>
               <p className="mt-3 leading-relaxed text-muted">
-                회원은 조식과 중식을 10% 상당 할인된 가격으로 이용할 수 있습니다.
                 식사비는 그린피에 포함되지 않습니다.
               </p>
             </div>

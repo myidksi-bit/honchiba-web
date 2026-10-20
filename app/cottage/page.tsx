@@ -71,9 +71,6 @@ export default function CottagePage() {
                 </div>
               ))}
             </dl>
-            <p className="mt-4 text-sm text-muted">
-              회원은 숙박을 40% 상당 할인된 가격으로 이용할 수 있습니다.
-            </p>
           </div>
           <div className="relative mx-auto aspect-[2/3] w-full max-w-sm overflow-hidden">
             <Image

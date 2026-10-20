@@ -28,8 +28,7 @@ export default function ReservationPage() {
               X골프앱에서 예약
             </h2>
             <p className="mt-4 leading-relaxed text-muted">
-              라운드와 숙박 예약은 X골프앱에서 신청해 주세요. 회원은 우선 예약이
-              가능하며, 비회원은 1개월 후부터 예약할 수 있습니다.
+              라운드와 숙박 예약은 X골프앱에서 신청해 주세요.
             </p>
           </div>
           <div className="border border-forest/15 bg-white p-8">
