@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import FamilyClubDetail from "@/components/FamilyClubDetail";
-import PageHero from "@/components/PageHero";
 import { familyClubs, familyDiscount } from "@/lib/familyClubs";
+import lvccHero from "@/public/images/family-lvcc-hero.jpg";
+import pvccHero from "@/public/images/family-pvcc-hero.jpg";
 
 export const metadata: Metadata = {
   title: "패밀리CC",
@@ -13,11 +15,41 @@ export const metadata: Metadata = {
 export default function FamilyCcPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Family Country Clubs"
-        title="패밀리CC"
-        lead="라스베이거스와 팜데저트, 미국의 두 패밀리 골프장에서도 글로벌10 회원 혜택을 누리세요."
-      />
+      <section className="relative flex min-h-[320px] items-end overflow-hidden bg-forest-deep sm:min-h-[420px]">
+        <div className="absolute inset-0 grid grid-cols-2">
+          <div className="relative">
+            <Image
+              src={lvccHero}
+              alt="석양 무렵 라스베이거스 컨트리클럽 클럽하우스와 코스, 뒤편의 호텔 건물"
+              fill
+              priority
+              placeholder="blur"
+              sizes="50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              src={pvccHero}
+              alt="야자수 길 옆 팜밸리 컨트리클럽 입구 석조 사인"
+              fill
+              priority
+              placeholder="blur"
+              sizes="50vw"
+              className="object-cover"
+              style={{ objectPosition: "left 85%" }}
+            />
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/90 via-forest-deep/40 to-transparent" />
+        <div className="container-x relative py-10 sm:py-14">
+          <p className="eyebrow text-[#e3c891]">Family Country Clubs</p>
+          <h1 className="mt-3 font-serif text-3xl font-semibold text-white sm:text-5xl">패밀리CC</h1>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/90 sm:text-base">
+            라스베이거스와 팜데저트, 미국의 두 패밀리 골프장에서도 글로벌10 회원 혜택을 누리세요.
+          </p>
+        </div>
+      </section>
 
       <nav
         aria-label="패밀리CC 바로가기"

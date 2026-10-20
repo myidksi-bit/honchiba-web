@@ -66,7 +66,7 @@ export default function MembershipPage() {
         image={heroImage}
         eyebrow="Global Membership 10"
         title="글로벌10 회원권"
-        lead="10년 동안 혼치바를 내 골프장처럼. 예약 횟수 제한 없이 이용하는 10년 소멸형 회원권입니다."
+        lead="10년 동안 혼치바를 내 골프장처럼, 미국의 명문 골프장 라스베이거스 컨트리클럽과 팜밸리 컨트리클럽을 50% 특별 할인 조건으로 이용하는 회원권입니다."
       />
 
       <nav

@@ -154,7 +154,7 @@ export default function CottagePage() {
                 코티지 테라스에서 즐기는 BBQ
               </h2>
               <p className="mt-5 leading-relaxed text-ivory/80">
-                동반자와 함께하는 저녁 바비큐. 4인 세트 12,000엔(별도)이며
+                동반자와 함께하는 저녁 바비큐. 2인 세트 10,000엔(별도)이며
                 돼지고기·쌈채소·숯불이 포함됩니다.
               </p>
             </div>
