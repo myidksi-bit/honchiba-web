@@ -151,8 +151,8 @@ export default function Home() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { name: "골드", price: "1,200만원", who: "정회원 1명 · 무기명 3명" },
-              { name: "블랙", price: "800만원", who: "정회원 1명" },
+              { name: "골드", price: "120만엔", who: "정회원 1명 · 무기명 3명" },
+              { name: "블랙", price: "80만엔", who: "정회원 1명" },
             ].map((m) => (
               <div key={m.name} className="border border-forest/15 bg-white p-7">
                 <p className="text-xs tracking-[0.25em] text-brass">10년 소멸형</p>
